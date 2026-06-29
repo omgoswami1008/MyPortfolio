@@ -373,8 +373,8 @@ export const contactSection = {
 };
 
 export const contactInfo = {
-  email: "om@goswamiomgiri.dev",
-  location: "bhavnagar, India",
+  email: "omg60963@gmail.com",
+  location: "Ahmadabad, India",
   availability: "Available for remote opportunities",
 };
 
