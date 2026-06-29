@@ -4,12 +4,12 @@
 
 // BASIC INFO
 export const personalInfo = {
-  name: "Goswami Omgiri",
+  name: "Omgiri Goswami ",
   initials: "Om ",
   title: "Data Scientist ",
   tagline: "Transforming complex data into actionable insights through machine learning, statistical analysis, and elegant code solutions.",
-  location: "ahemdabad, India",
-  email: "om@goswamiomgiri.dev",
+  location: "Ahmadabad, India",
+  email: "omg60963@gmail.com",
   availability: "Available for remote opportunities",
   welcomeText: "Welcome to my portfolio",
 };
