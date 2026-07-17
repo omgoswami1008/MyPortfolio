@@ -9,6 +9,8 @@ const transporter = nodemailer.createTransport({
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
   },
+  connectionTimeout: 10000,
+  greetingTimeout: 10000,
 });
 
 function escapeHtml(text: string): string {
@@ -30,11 +32,37 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.error("SMTP credentials not configured. Check .env.local");
+      return NextResponse.json(
+        { error: "Email service is not configured. Please contact directly via email." },
+        { status: 500 }
+      );
+    }
+
     const recipient = process.env.CONTACT_EMAIL || process.env.SMTP_USER;
 
     if (!recipient) {
       return NextResponse.json(
         { error: "Recipient email not configured." },
+        { status: 500 }
+      );
+    }
+
+    try {
+      await transporter.verify();
+    } catch (verifyError) {
+      console.error("SMTP connection verification failed:", verifyError);
+      const errMsg =
+        verifyError instanceof Error ? verifyError.message : String(verifyError);
+      if (errMsg.includes("Invalid credentials") || errMsg.includes("authentication")) {
+        return NextResponse.json(
+          { error: "Email authentication failed. The App Password may be invalid or expired. Please regenerate it at https://myaccount.google.com/apppasswords" },
+          { status: 500 }
+        );
+      }
+      return NextResponse.json(
+        { error: "Could not connect to email server. Please try again later." },
         { status: 500 }
       );
     }
@@ -76,6 +104,13 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Email send error:", error);
+    const errMsg = error instanceof Error ? error.message : String(error);
+    if (errMsg.includes("Invalid credentials") || errMsg.includes("authentication")) {
+      return NextResponse.json(
+        { error: "Email authentication failed. Please regenerate your Gmail App Password at https://myaccount.google.com/apppasswords" },
+        { status: 500 }
+      );
+    }
     return NextResponse.json(
       { error: "Failed to send message. Please try again later." },
       { status: 500 }
