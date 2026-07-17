@@ -427,7 +427,10 @@ export const projects: Project[] = [
 ];
 
 // TIMELINE SECTION
-export type TimelineItemType = "education" | "work" | "certification";
+export type TimelineItemType =   | "education"
+  | "learning"
+  | "project"
+  | "certification";;
 
 export interface TimelineItem {
   type: TimelineItemType;
