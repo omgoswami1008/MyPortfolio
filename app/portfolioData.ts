@@ -612,20 +612,36 @@ export const footerSection = {
 };
 
 // TIMELINE TYPE CONFIG (for styling)
-export const timelineTypeConfig = {
+
+export const timelineTypeConfig: Record<
+  TimelineItemType,
+  {
+    color: string;
+    gradient: string;
+    borderColor: string;
+  }
+> = {
   education: {
-    color: "#00d4ff",
-    gradient: "from-neon-cyan/20 to-neon-cyan/5",
-    borderColor: "border-neon-cyan/30",
+    color: "#00D4FF",
+    gradient: "from-cyan-500/20 to-cyan-500/5",
+    borderColor: "border-cyan-500/30",
   },
-  work: {
-    color: "#00ff88",
-    gradient: "from-success/20 to-success/5",
-    borderColor: "border-success/30",
+
+  learning: {
+    color: "#22C55E",
+    gradient: "from-green-500/20 to-green-500/5",
+    borderColor: "border-green-500/30",
   },
+
+  project: {
+    color: "#F59E0B",
+    gradient: "from-amber-500/20 to-amber-500/5",
+    borderColor: "border-amber-500/30",
+  },
+
   certification: {
-    color: "#a855f7",
-    gradient: "from-purple-500/20 to-purple-500/5",
-    borderColor: "border-purple-500/30",
+    color: "#8B5CF6",
+    gradient: "from-violet-500/20 to-violet-500/5",
+    borderColor: "border-violet-500/30",
   },
 };

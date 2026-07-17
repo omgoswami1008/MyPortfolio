@@ -2,12 +2,20 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
-import { GraduationCap, Briefcase, Award, Building2, Calendar } from "lucide-react";
+import {
+  GraduationCap,
+  BookOpen,
+  FolderGit2,
+  Award,
+  Building2,
+  Calendar,
+} from "lucide-react";
 import { timelineSection, timelineItems, timelineTypeConfig, type TimelineItemType } from "../portfolioData";
 
 const typeIconMap: Record<TimelineItemType, typeof GraduationCap> = {
   education: GraduationCap,
-  work: Briefcase,
+  learning: BookOpen,
+  project: FolderGit2,
   certification: Award,
 };
 
