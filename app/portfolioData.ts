@@ -4,50 +4,69 @@
 
 // BASIC INFO
 export const personalInfo = {
-  name: "Omgiri Goswami ",
-  initials: "Om ",
-  title: "Data Scientist ",
-  tagline: "Transforming complex data into actionable insights through machine learning, statistical analysis, and elegant code solutions.",
-  location: "Ahmadabad, India",
+  name: "Omgiri V. Goswami",
+  initials: "OG",
+  title: "Aspiring Data Scientist",
+  tagline:
+    "Passionate about transforming raw data into meaningful insights using Python, SQL, Machine Learning, and Data Visualization. Continuously learning, building real-world projects, and solving business problems through data.",
+  location: "Ahmedabad, Gujarat, India",
   email: "omg60963@gmail.com",
-  availability: "Available for remote opportunities",
-  welcomeText: "Welcome to my portfolio",
+  availability: "Open to Internships & Full-Time Opportunities",
+  welcomeText: "Welcome to My Portfolio",
 };
 
 // HERO SECTION
+// HERO SECTION
 export const heroSection = {
-  words: ["Data Scientist", "&", "MERN Developer"],
-  highlightWordIndex: 0, // Index of word to highlight with gradient (0 = first word)
+  words: [
+    "Aspiring Data Scientist",
+    
+  ],
+
+  highlightWordIndex: 0,
+
   ctaPrimary: {
-    text: "View Work",
+    text: "Explore My Projects",
     href: "#projects",
     scrollTo: "projects",
   },
+
   ctaSecondary: {
-    text: "Get in Touch",
+    text: "Let's Connect",
     href: "#contact",
   },
+
   ctaResume: {
     text: "Download Resume",
-    resumeUrl: "/resume/Om Goswami (2).pdf",
+    resumeUrl: "/resume/Om_Goswami_Resume.pdf",
   },
 };
 
 // ABOUT SECTION
 export const aboutSection = {
   sectionId: "about",
+
   subtitle: "About Me",
-  title: "From Full Stack to",
-  titleHighlight: "Data-Driven",
+
+  title: "Turning Data Into",
+
+  titleHighlight: "Meaningful Insights",
+
   paragraphs: [
-    "My journey in tech began with building full-stack applications using the MERN stack. I was fascinated by creating interactive user experiences and scalable backend systems.",
-    "However, I discovered a deeper passion in the intersection of data and decision-making. The ability to extract meaningful patterns from raw data and influence strategic decisions through insights became my new calling.",
-    "Today, I specialize in machine learning, statistical analysis, and data visualization. I combine my software engineering background with data science expertise to build end-to-end data solutions—from data pipelines to deployed models.",
+    "I'm Omgiri V. Goswami, an MCA student and aspiring Data Scientist with a strong passion for data analytics, machine learning, and artificial intelligence. I enjoy solving real-world problems by transforming raw data into meaningful insights using Python, SQL, and modern data science tools.",
+
+    "My learning journey focuses on data preprocessing, exploratory data analysis (EDA), predictive modeling, and data visualization. Through hands-on projects, I've strengthened my understanding of machine learning algorithms, statistical concepts, and practical problem-solving.",
+
+    "I believe in continuous learning and building impactful solutions. My goal is to contribute to innovative teams where I can apply my analytical skills, learn from experienced professionals, and grow into a successful Data Scientist."
   ],
+
   traits: [
+    "Analytical Thinking",
     "Problem Solving",
-    "Clean Code",
-    "Data Storytelling",
+    "Machine Learning",
+    "Data Visualization",
+    "Continuous Learning",
+    "Team Collaboration"
   ],
 };
 
@@ -66,7 +85,7 @@ export interface Skill {
 export const skillsSection = {
   sectionId: "skills",
   subtitle: "Technical Skills",
-  title: "Tools &",
+  title: "Skills &",
   titleHighlight: "Technologies",
 };
 
@@ -75,63 +94,96 @@ export const skills: Skill[] = [
     id: "python",
     name: "Python",
     icon: "Code2",
-    level: 90,
-    description: "Pandas,Numpy,Data Analysis, ML, Automation",
+    level: 85,
+    description:
+      "Object-Oriented Programming, Data Analysis, Automation, NumPy, Pandas",
     category: "programming",
   },
+
   {
     id: "sql",
     name: "SQL",
     icon: "Database",
-    level: 85,
-    description: "Queries, Optimization, ETL",
+    level: 80,
+    description:
+      "MySQL, Joins, Queries, Aggregation, Data Retrieval",
     category: "data",
   },
+
+  {
+    id: "pandas",
+    name: "Pandas",
+    icon: "Table",
+    level: 85,
+    description:
+      "Data Cleaning, Transformation, EDA, Data Manipulation",
+    category: "data",
+  },
+
+  {
+    id: "numpy",
+    name: "NumPy",
+    icon: "Calculator",
+    level: 82,
+    description:
+      "Arrays, Numerical Computing, Mathematical Operations",
+    category: "data",
+  },
+
   {
     id: "machine-learning",
     name: "Machine Learning",
     icon: "Brain",
-    level: 80,
-    description: "Scikit-learn, TensorFlow, NLP",
+    level: 75,
+    description:
+      "Regression, Classification, Model Evaluation, Scikit-learn",
     category: "data",
   },
+
   {
-    id: "nextjs",
-    name: "Next.js",
-    icon: "Globe",
+    id: "data-analysis",
+    name: "Data Analysis",
+    icon: "Search",
     level: 85,
-    description: "Full-stack, SSR, API Routes",
-    category: "web",
+    description:
+      "EDA, Data Cleaning, Feature Engineering, Insights",
+    category: "data",
   },
+
   {
-    id: "react",
-    name: "React",
-    icon: "Layout",
-    level: 88,
-    description: "Components, Hooks, State",
-    category: "web",
-  },
-  {
-    id: "data-visualization",
+    id: "visualization",
     name: "Data Visualization",
     icon: "BarChart3",
-    level: 82,
-    description: "Matplotlib, Seaborn, D3.js",
+    level: 80,
+    description:
+      "Matplotlib, Seaborn, Charts, Dashboard Design",
     category: "data",
   },
+
   {
-    id: "data-clearing",
-    name: "Data Clearing",
-    icon: "BarChart3",
-    level: 89,
-    description: "Seaborn",
-    category: "data",
+    id: "git",
+    name: "Git & GitHub",
+    icon: "GitBranch",
+    level: 75,
+    description:
+      "Version Control, Collaboration, Repository Management",
+    category: "tools",
+  },
+
+  {
+    id: "vscode",
+    name: "VS Code",
+    icon: "Monitor",
+    level: 90,
+    description:
+      "Development Environment, Extensions, Debugging",
+    category: "tools",
   },
 ];
 
 // PROJECTS SECTION
-export type ProjectCategory = "all" | "machine-learning" | "data-analysis" | "web-dev" | "nlp";
-export type VizType = "bar" | "line" | "scatter" | "area" | "pie";
+export type ProjectCategory =| "all" | "machine-learning" | "data-analysis" | "generative-ai" | "recommendation";
+export type VizType = | "bar"| "line"| "scatter"| "area"| "pie";
 
 export interface ProjectTool {
   name: string;
@@ -166,129 +218,211 @@ export const projectCategories: { id: ProjectCategory; label: string }[] = [
   { id: "all", label: "All Projects" },
   { id: "machine-learning", label: "Machine Learning" },
   { id: "data-analysis", label: "Data Analysis" },
-  { id: "nlp", label: "NLP" },
-  { id: "web-dev", label: "Web Dev" },
+  { id: "generative-ai", label: "Generative AI" },
+  { id: "recommendation", label: "Recommendation" },
 ];
 
 export const projects: Project[] = [
   {
-    id: "churn-prediction",
-    title: "Customer Churn Prediction",
-    description: "Predictive model identifying at-risk customers with 89% accuracy using ensemble methods.",
-    problem: "A subscription-based SaaS company was losing 15% of customers monthly with no early warning system. The marketing team needed to identify churn signals 30 days in advance to enable proactive retention campaigns.",
-    solution: "Built a XGBoost-based ensemble model trained on 50+ behavioral features including login frequency, feature usage patterns, and support ticket history. Integrated with CRM for automated outreach workflows.",
-    category: "machine-learning",
-    dataTags: ["Classification", "Ensemble Methods", "Customer Analytics"],
+    id: "rag-ai-assistant",
+    title: "RAG-Based AI Teaching Assistant",
+    description:
+      "An AI-powered teaching assistant that answers course-related questions using Retrieval-Augmented Generation (RAG).",
+    problem:
+      "Students spend significant time searching through lecture notes and study materials for answers. A faster, context-aware solution was needed.",
+    solution:
+      "Developed a RAG application using LangChain, FAISS, and Gemini/OpenAI to retrieve relevant content from uploaded documents and generate accurate responses through a Streamlit interface.",
+    category: "generative-ai",
+    dataTags: [
+      "RAG",
+      "Generative AI",
+      "LangChain",
+      "LLM",
+      "Vector Database",
+    ],
     tools: [
       { name: "Python", icon: "Code2" },
-      { name: "XGBoost", icon: "TreePine" },
-      { name: "Scikit-learn", icon: "Brain" },
-      { name: "Pandas", icon: "Grid3X3" },
+      { name: "LangChain", icon: "Brain" },
+      { name: "FAISS", icon: "Database" },
+      { name: "Streamlit", icon: "Monitor" },
     ],
-    metric: "23%",
-    metricLabel: "Churn Reduction",
-    vizType: "bar",
-    githubUrl: "https://github.com/example/churn-prediction",
-    color: "#00d4ff",
-  },
-  {
-    id: "sales-dashboard",
-    title: "Sales Trend Analysis Dashboard",
-    description: "Interactive dashboard analyzing 5 years of sales data with seasonal pattern detection.",
-    problem: "The operations team struggled with manual Excel reports taking 3 days to compile. Regional managers had no real-time visibility into performance, leading to delayed inventory decisions.",
-    solution: "Developed a Next.js dashboard with Python backend processing 2M+ transactions. Implemented automated anomaly detection and seasonal decomposition for accurate demand forecasting.",
-    category: "data-analysis",
-    dataTags: ["Time Series", "Forecasting", "Visualization"],
-    tools: [
-      { name: "Next.js", icon: "Globe" },
-      { name: "Python", icon: "Code2" },
-      { name: "Plotly", icon: "BarChart2" },
-      { name: "SQL", icon: "Database" },
-    ],
-    metric: "15%",
-    metricLabel: "Cost Reduction",
-    vizType: "line",
-    githubUrl: "https://github.com/example/sales-dashboard",
-    color: "#00ff88",
-  },
-  {
-    id: "user-segmentation",
-    title: "RFM User Segmentation Engine",
-    description: "ML-powered customer segmentation system identifying 6 distinct personas for targeted marketing.",
-    problem: "Marketing campaigns were blasting all customers with generic messages, resulting in low engagement rates and wasted budget. The team needed intelligent segmentation to deliver personalized content.",
-    solution: "Implemented RFM (Recency, Frequency, Monetary) analysis combined with K-Means clustering. Created automated persona profiles with preferred channels, optimal send times, and content recommendations.",
-    category: "machine-learning",
-    dataTags: ["Clustering", "Marketing Analytics", "RFM Analysis"],
-    tools: [
-      { name: "Python", icon: "Code2" },
-      { name: "Scikit-learn", icon: "Brain" },
-      { name: "SQL", icon: "Database" },
-      { name: "React", icon: "Layout" },
-    ],
-    metric: "31%",
-    metricLabel: "Conversion Lift",
+    metric: "RAG",
+    metricLabel: "In Progress",
     vizType: "scatter",
-    githubUrl: "https://github.com/example/user-segmentation",
-    color: "#ff6b6b",
+    githubUrl: "YOUR_GITHUB_LINK",
+    color: "#8B5CF6",
   },
+
   {
-    id: "sentiment-analysis",
-    title: "Real-time Sentiment Analyzer",
-    description: "NLP pipeline processing 10K+ reviews daily with sub-second latency for product insights.",
-    problem: "Product managers relied on quarterly surveys missing 90% of customer feedback scattered across app stores, social media, and support tickets. Manual analysis couldn't scale with growth.",
-    solution: "Deployed a fine-tuned BERT model on AWS Lambda with Redis caching. Built a real-time dashboard aggregating sentiment trends by product feature, competitor comparison, and emerging issues.",
-    category: "nlp",
-    dataTags: ["NLP", "BERT", "Real-time Processing"],
+    id: "customer-churn",
+    title: "Customer Churn Prediction",
+    description:
+      "Machine learning model for predicting customer churn using classification algorithms.",
+    problem:
+      "Businesses need to identify customers who are likely to leave so they can improve customer retention strategies.",
+    solution:
+      "Performed data cleaning, exploratory data analysis, feature engineering, model training, and evaluation using Scikit-learn classification algorithms.",
+    category: "machine-learning",
+    dataTags: [
+      "Classification",
+      "EDA",
+      "Feature Engineering",
+      "Machine Learning",
+    ],
     tools: [
       { name: "Python", icon: "Code2" },
-      { name: "Transformers", icon: "Brain" },
-      { name: "AWS", icon: "Cloud" },
-      { name: "Redis", icon: "Zap" },
+      { name: "Pandas", icon: "Table" },
+      { name: "Scikit-learn", icon: "Brain" },
+      { name: "Matplotlib", icon: "BarChart3" },
     ],
     metric: "89%",
     metricLabel: "Accuracy",
-    vizType: "area",
-    githubUrl: "https://github.com/example/sentiment-analyzer",
-    color: "#a855f7",
+    vizType: "bar",
+    githubUrl: "YOUR_GITHUB_LINK",
+    color: "#00D4FF",
   },
+
   {
-    id: "fraud-detection",
-    title: "E-commerce Fraud Detection",
-    description: "Real-time transaction scoring system preventing fraudulent purchases with 0.3% false positive rate.",
-    problem: "The fraud team was manually reviewing 20% of transactions, causing checkout delays and customer frustration. Fraud losses were eating 3% of revenue monthly.",
-    solution: "Built a lightweight Random Forest model optimized for low-latency inference. Implemented feature engineering pipeline extracting device fingerprint, velocity patterns, and behavioral biometrics.",
+    id: "housing-price",
+    title: "California Housing Price Prediction",
+    description:
+      "Regression model for predicting California housing prices using demographic and geographical features.",
+    problem:
+      "Estimating housing prices accurately helps buyers, sellers, and analysts make informed decisions.",
+    solution:
+      "Built a complete machine learning pipeline including preprocessing, feature engineering, and Random Forest Regression using Scikit-learn.",
     category: "machine-learning",
-    dataTags: ["Anomaly Detection", "Real-time", "Risk Scoring"],
+    dataTags: [
+      "Regression",
+      "Random Forest",
+      "EDA",
+      "Pipeline",
+    ],
+    tools: [
+      { name: "Python", icon: "Code2" },
+      { name: "Pandas", icon: "Table" },
+      { name: "NumPy", icon: "Calculator" },
+      { name: "Scikit-learn", icon: "Brain" },
+    ],
+    metric: "0.91",
+    metricLabel: "R² Score",
+    vizType: "scatter",
+    githubUrl: "YOUR_GITHUB_LINK",
+    color: "#0EA5E9",
+  },
+
+  {
+    id: "train-route-analysis",
+    title: "Train Route Analysis & Journey Time Prediction",
+    description:
+      "Data analysis and machine learning project for predicting train journey duration.",
+    problem:
+      "Railway datasets contain valuable operational information that can improve journey time estimation.",
+    solution:
+      "Performed data cleaning, feature engineering, visualization, and regression modeling to analyze railway operations and predict journey duration.",
+    category: "data-analysis",
+    dataTags: [
+      "EDA",
+      "Regression",
+      "Visualization",
+      "Feature Engineering",
+    ],
+    tools: [
+      { name: "Python", icon: "Code2" },
+      { name: "Pandas", icon: "Table" },
+      { name: "Matplotlib", icon: "BarChart3" },
+      { name: "Scikit-learn", icon: "Brain" },
+    ],
+    metric: "EDA",
+    metricLabel: "Insights",
+    vizType: "line",
+    githubUrl: "YOUR_GITHUB_LINK",
+    color: "#10B981",
+  },
+
+  {
+    id: "sales-dashboard",
+    title: "Retail Sales Analytics Dashboard",
+    description:
+      "Interactive dashboard providing business insights through sales and revenue analysis.",
+    problem:
+      "Business managers require visual dashboards to monitor revenue trends and product performance.",
+    solution:
+      "Created an analytics dashboard using Python, SQL, and visualization tools to explore sales KPIs and monthly trends.",
+    category: "data-analysis",
+    dataTags: [
+      "Dashboard",
+      "Business Analytics",
+      "SQL",
+      "Visualization",
+    ],
+    tools: [
+      { name: "Python", icon: "Code2" },
+      { name: "SQL", icon: "Database" },
+      { name: "Power BI", icon: "BarChart3" },
+      { name: "Pandas", icon: "Table" },
+    ],
+    metric: "12",
+    metricLabel: "KPIs",
+    vizType: "line",
+    githubUrl: "YOUR_GITHUB_LINK",
+    color: "#22C55E",
+  },
+
+  {
+    id: "movie-recommendation",
+    title: "Movie Recommendation System",
+    description:
+      "Recommendation engine that suggests movies based on content similarity.",
+    problem:
+      "Users often find it difficult to discover movies that match their interests.",
+    solution:
+      "Developed a content-based recommendation system using cosine similarity and feature extraction techniques.",
+    category: "recommendation",
+    dataTags: [
+      "Recommendation",
+      "Cosine Similarity",
+      "Content-Based",
+    ],
     tools: [
       { name: "Python", icon: "Code2" },
       { name: "Scikit-learn", icon: "Brain" },
-      { name: "Kafka", icon: "Zap" },
-      { name: "PostgreSQL", icon: "Database" },
+      { name: "Pandas", icon: "Table" },
+      { name: "Streamlit", icon: "Monitor" },
     ],
-    metric: "$2.4M",
-    metricLabel: "Annual Savings",
-    vizType: "pie",
-    githubUrl: "https://github.com/example/fraud-detection",
-    color: "#f59e0b",
+    metric: "Top 10",
+    metricLabel: "Recommendations",
+    vizType: "scatter",
+    githubUrl: "YOUR_GITHUB_LINK",
+    color: "#EC4899",
   },
+
   {
-    id: "inventory-optimizer",
-    title: "Smart Inventory Optimizer",
-    description: "ML-driven demand forecasting reducing stockouts by 45% while cutting excess inventory.",
-    problem: "The warehouse was managing 50K SKUs with Excel-based ordering causing frequent stockouts on popular items and overstock on slow-movers. Manual forecasting couldn't account for trends or seasonality.",
-    solution: "Developed a time series forecasting system combining Prophet for trend decomposition with custom safety stock calculations. Integrated with ERP for automated purchase order generation.",
-    category: "data-analysis",
-    dataTags: ["Forecasting", "Supply Chain", "Optimization"],
+    id: "credit-card-fraud",
+    title: "Credit Card Fraud Detection",
+    description:
+      "Machine learning model for detecting fraudulent credit card transactions.",
+    problem:
+      "Financial institutions need automated fraud detection systems to minimize financial losses.",
+    solution:
+      "Built a classification model using Scikit-learn with preprocessing, feature scaling, and evaluation metrics for fraud detection.",
+    category: "machine-learning",
+    dataTags: [
+      "Classification",
+      "Fraud Detection",
+      "Machine Learning",
+    ],
     tools: [
       { name: "Python", icon: "Code2" },
-      { name: "Prophet", icon: "TrendingUp" },
-      { name: "SQL", icon: "Database" },
-      { name: "FastAPI", icon: "HardDrive" },
+      { name: "Scikit-learn", icon: "Brain" },
+      { name: "Pandas", icon: "Table" },
+      { name: "Matplotlib", icon: "BarChart3" },
     ],
-    metric: "45%",
-    metricLabel: "Fewer Stockouts",
-    vizType: "line",
-    color: "#22c55e",
+    metric: "96%",
+    metricLabel: "Accuracy",
+    vizType: "pie",
+    githubUrl: "YOUR_GITHUB_LINK",
+    color: "#F97316",
   },
 ];
 
@@ -360,46 +494,52 @@ export const timelineItems: TimelineItem[] = [
 ];
 
 // CONTACT SECTION
+
 export const contactSection = {
   sectionId: "contact",
-  subtitle: "Get in Touch",
+  subtitle: "Get In Touch",
   title: "Let's",
   titleHighlight: "Connect",
-  description: "Have a project in mind or want to collaborate? I'd love to hear from you.",
-  successTitle: "Message Sent!",
-  successMessage: "Thanks for reaching out. I'll get back to you within 24 hours.",
-  copyEmailSuccess: "Email copied to clipboard!",
-  messageSuccess: "Message sent successfully!",
+  description:
+    "I'm currently seeking Data Science, Machine Learning, AI, and Data Analytics internship or full-time opportunities. If you'd like to discuss a project, collaboration, or career opportunity, feel free to reach out. I'd be happy to connect.",
+
+  successTitle: "Message Sent Successfully!",
+  successMessage:
+    "Thank you for reaching out. I've received your message and will get back to you as soon as possible.",
+
+  copyEmailSuccess: "Email copied successfully!",
+  messageSuccess: "Your message has been sent successfully!",
 };
 
 export const contactInfo = {
   email: "omg60963@gmail.com",
-  location: "Ahmadabad, India",
-  availability: "Available for remote opportunities",
+  location: "Ahmedabad, Gujarat, India",
+  availability: "Open to Internships & Full-Time Opportunities",
 };
 
 // SOCIAL LINKS
+
 export interface SocialLink {
   name: string;
   href: string;
-  iconType: "github" | "linkedin" | "twitter" | "email";
+  iconType: "github" | "linkedin" | "email";
 }
 
 export const socialLinks: SocialLink[] = [
   {
     name: "GitHub",
-    href: "https://github.com/yourusername",
+    href: "https://github.com/omgoswami1008",
     iconType: "github",
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/om-goswami-79244a288",
     iconType: "linkedin",
   },
   {
-    name: "Twitter",
-    href: "https://twitter.com/yourusername",
-    iconType: "twitter",
+    name: "Email",
+    href: "mailto:omg60963@gmail.com",
+    iconType: "email",
   },
 ];
 
@@ -421,7 +561,7 @@ export const navLinks: NavLink[] = [
 export const footerSection = {
   tagline: "Data Scientist & Developer",
   buildText: "Built with ",
-  buildTools: "Goswami Omgiri V",
+  buildTools: "Goswami Omgiri v",
 };
 
 // TIMELINE TYPE CONFIG (for styling)
