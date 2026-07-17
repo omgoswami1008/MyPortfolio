@@ -451,45 +451,83 @@ export const timelineItems: TimelineItem[] = [
   {
     type: "education",
     title: "Master of Computer Applications (MCA)",
-    organization: "LDRP Institute of Technology and Research",
-    location: "Gujarat, India",
-    period: "2025 - 2027",
-    description: "Specialized in Data Science and Machine Learning with a focus on practical applications. Completed thesis on predictive analytics using ensemble methods.",
-    highlights: ["Data Science Track", "Machine Learning Specialization", "Research Thesis"],
+    organization: "Kadi Sarva Vishwavidyalaya",
+    location: "Gandhinagar, Gujarat",
+    period: "2025 - Present",
+    description:
+      "Currently pursuing a Master's degree in Computer Applications with a strong focus on Data Science, Machine Learning, Artificial Intelligence, and modern software development.",
+    highlights: [
+      "Data Science",
+      "Machine Learning",
+      "Python",
+      "SQL",
+      "Artificial Intelligence",
+    ],
   },
+
   {
-    type: "work",
-    title: "Data Science Intern",
-    organization: "Essy Learn Academy",
+    type: "learning",
+    title: "Data Science & AI Learning Journey",
+    organization: "Self Learning",
     location: "Remote",
-    period: "Jun 2022 - Dec 2022",
-    description: "Built ML models for customer behavior analysis and developed data pipelines processing real-time events. Created visualization dashboards for business intelligence.",
-    highlights: ["Customer Analytics", "Real-time Pipelines", "Dashboard Development"],
+    period: "2025 - Present",
+    description:
+      "Continuously learning Data Science, Machine Learning, Data Analytics, Generative AI, and Python through hands-on projects, online courses, and real-world datasets.",
+    highlights: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Data Visualization",
+      "Generative AI",
+    ],
   },
+
+  {
+    type: "project",
+    title: "Machine Learning Projects",
+    organization: "Personal Portfolio",
+    location: "GitHub",
+    period: "2025 - Present",
+    description:
+      "Designed and developed practical Machine Learning and Data Analytics projects including Customer Churn Prediction, California Housing Price Prediction, Train Route Analysis, and a RAG-Based AI Teaching Assistant.",
+    highlights: [
+      "Customer Churn Prediction",
+      "Housing Price Prediction",
+      "Train Route Analysis",
+      "RAG AI Assistant",
+    ],
+  },
+
   {
     type: "certification",
-    title: "AWS Certified Data Analytics",
-    organization: "Amazon Web Services",
-    period: "2023",
-    description: "Validated expertise in designing and implementing AWS data analytics solutions at scale, including Kinesis, Glue, and Redshift.",
+    title: "Professional Certifications",
+    organization: "Coursera • Udemy • LinkedIn Learning",
+    period: "2025 - Present",
+    description:
+      "Actively completing certifications in Python, SQL, Data Science, Machine Learning, Artificial Intelligence, and related technologies to strengthen practical skills.",
+    highlights: [
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "Data Science",
+    ],
   },
-  {
-    type: "work",
-    title: "Founder & Developer",
-    organization: "Nexora Digital",
-    location: "Self-founded",
-    period: "2024 - Present",
-    description: "Building innovative data-driven solutions for businesses. Specializing in ML-powered applications, dashboards, and automation tools.",
-    highlights: ["Full-stack Development", "ML Integration", "Product Development"],
-  },
+
   {
     type: "education",
     title: "Bachelor of Computer Applications (BCA)",
-    organization: "Gujarat University",
-    location: "Gujarat, India",
-    period: "2018 - 2021",
-    description: "Foundation in computer science, programming, and software development principles.",
-    highlights: ["Programming Fundamentals", "Web Development", "Database Systems"],
+    organization: "Swami Sahajanand Computer Science College",
+    location: "Bhavnagar, Gujarat",
+    period: "2022 - 2025",
+    description:
+      "Completed Bachelor's degree with a strong foundation in programming, database management, web technologies, and software development.",
+    highlights: [
+      "Programming",
+      "Database Management",
+      "Software Development",
+      "Problem Solving",
+    ],
   },
 ];
 
