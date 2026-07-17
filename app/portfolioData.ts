@@ -38,7 +38,7 @@ export const heroSection = {
 
   ctaResume: {
     text: "Download Resume",
-    resumeUrl: "/resume/Om_goswami_Data_science_2026",
+    resumeUrl: "/resume/Om_goswami_Data_science_2026.pdf",
   },
 };
 

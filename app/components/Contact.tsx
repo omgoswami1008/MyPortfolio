@@ -378,7 +378,7 @@ export default function Contact() {
 
                 <div className="flex gap-3">
                   <MagneticButton
-                    onClick={() => window.open("https://github.com", "_blank")}
+                    onClick={() => window.open("https://github.com/omgoswami1008", "_blank")}
                     className="p-3 glass rounded-xl hover:bg-neon-cyan/10 hover:border-neon-cyan/30 border border-border-subtle transition-all"
                     title="GitHub"
                   >
@@ -387,7 +387,7 @@ export default function Contact() {
                     </span>
                   </MagneticButton>
                   <MagneticButton
-                    onClick={() => window.open("https://linkedin.com", "_blank")}
+                    onClick={() => window.open("https://www.linkedin.com/in/om-goswami-79244a288", "_blank")}
                     className="p-3 glass rounded-xl hover:bg-neon-cyan/10 hover:border-neon-cyan/30 border border-border-subtle transition-all"
                     title="LinkedIn"
                   >
