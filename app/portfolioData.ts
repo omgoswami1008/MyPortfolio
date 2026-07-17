@@ -278,7 +278,7 @@ export const projects: Project[] = [
     metric: "89%",
     metricLabel: "Accuracy",
     vizType: "bar",
-    githubUrl: "YOUR_GITHUB_LINK",
+    githubUrl: "https://github.com/omgoswami1008/Customer-Churn-Prediction-Retention-System",
     color: "#00D4FF",
   },
 
@@ -336,7 +336,7 @@ export const projects: Project[] = [
     metric: "EDA",
     metricLabel: "Insights",
     vizType: "line",
-    githubUrl: "YOUR_GITHUB_LINK",
+    githubUrl: "https://github.com/omgoswami1008/Train-Route-Analysis-and-Journey-Time-Prediction",
     color: "#10B981",
   },
 
