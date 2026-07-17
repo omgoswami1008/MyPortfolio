@@ -426,11 +426,15 @@ export const projects: Project[] = [
   },
 ];
 
+// ==============================
 // TIMELINE SECTION
-export type TimelineItemType =   | "education"
+// ==============================
+
+export type TimelineItemType =
+  | "education"
   | "learning"
   | "project"
-  | "certification";;
+  | "certification";
 
 export interface TimelineItem {
   type: TimelineItemType;
@@ -444,10 +448,11 @@ export interface TimelineItem {
 
 export const timelineSection = {
   sectionId: "experience",
-  subtitle: "Journey",
-  title: "Experience &",
-  titleHighlight: "Education",
-  description: "From academia to industry—my path in technology and data science.",
+  subtitle: "My Journey",
+  title: "Learning &",
+  titleHighlight: "Experience",
+  description:
+    "My journey as an MCA student, continuously building knowledge in Data Science, Machine Learning, Artificial Intelligence, and software development through academics, certifications, and hands-on projects.",
 };
 
 export const timelineItems: TimelineItem[] = [
@@ -455,10 +460,10 @@ export const timelineItems: TimelineItem[] = [
     type: "education",
     title: "Master of Computer Applications (MCA)",
     organization: "Kadi Sarva Vishwavidyalaya",
-    location: "Gandhinagar, Gujarat",
+    location: "Gandhinagar, Gujarat, India",
     period: "2025 - Present",
     description:
-      "Currently pursuing a Master's degree in Computer Applications with a strong focus on Data Science, Machine Learning, Artificial Intelligence, and modern software development.",
+      "Currently pursuing a Master of Computer Applications with a focus on Data Science, Machine Learning, Artificial Intelligence, and modern software development.",
     highlights: [
       "Data Science",
       "Machine Learning",
@@ -472,16 +477,16 @@ export const timelineItems: TimelineItem[] = [
     type: "learning",
     title: "Data Science & AI Learning Journey",
     organization: "Self Learning",
-    location: "Remote",
+    location: "Online",
     period: "2025 - Present",
     description:
-      "Continuously learning Data Science, Machine Learning, Data Analytics, Generative AI, and Python through hands-on projects, online courses, and real-world datasets.",
+      "Continuously improving my skills in Python, SQL, Data Analysis, Machine Learning, Deep Learning, Generative AI, and Data Visualization by building practical projects.",
     highlights: [
       "Python",
       "Pandas",
       "NumPy",
       "Scikit-learn",
-      "Data Visualization",
+      "Machine Learning",
       "Generative AI",
     ],
   },
@@ -489,15 +494,16 @@ export const timelineItems: TimelineItem[] = [
   {
     type: "project",
     title: "Machine Learning Projects",
-    organization: "Personal Portfolio",
+    organization: "Personal Portfolio & GitHub",
     location: "GitHub",
     period: "2025 - Present",
     description:
-      "Designed and developed practical Machine Learning and Data Analytics projects including Customer Churn Prediction, California Housing Price Prediction, Train Route Analysis, and a RAG-Based AI Teaching Assistant.",
+      "Built real-world Data Science and Machine Learning projects including Customer Churn Prediction, California Housing Price Prediction, Train Route Analysis & Journey Time Prediction, Retail Sales Analytics Dashboard, and a RAG-Based AI Teaching Assistant.",
     highlights: [
       "Customer Churn Prediction",
       "Housing Price Prediction",
       "Train Route Analysis",
+      "Retail Sales Dashboard",
       "RAG AI Assistant",
     ],
   },
@@ -508,7 +514,7 @@ export const timelineItems: TimelineItem[] = [
     organization: "Coursera • Udemy • LinkedIn Learning",
     period: "2025 - Present",
     description:
-      "Actively completing certifications in Python, SQL, Data Science, Machine Learning, Artificial Intelligence, and related technologies to strengthen practical skills.",
+      "Actively completing professional certifications in Python, SQL, Data Science, Machine Learning, Artificial Intelligence, and related technologies to strengthen practical skills.",
     highlights: [
       "Python",
       "SQL",
@@ -521,15 +527,15 @@ export const timelineItems: TimelineItem[] = [
     type: "education",
     title: "Bachelor of Computer Applications (BCA)",
     organization: "Swami Sahajanand Computer Science College",
-    location: "Bhavnagar, Gujarat",
+    location: "Bhavnagar, Gujarat, India",
     period: "2022 - 2025",
     description:
-      "Completed Bachelor's degree with a strong foundation in programming, database management, web technologies, and software development.",
+      "Completed a Bachelor's degree in Computer Applications with a strong foundation in programming, database management, web development, and software engineering.",
     highlights: [
       "Programming",
       "Database Management",
-      "Software Development",
-      "Problem Solving",
+      "Web Development",
+      "Software Engineering",
     ],
   },
 ];
